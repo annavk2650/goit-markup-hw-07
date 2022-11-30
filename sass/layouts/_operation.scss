@@ -1,0 +1,102 @@
+.button__list {
+  display: flex;
+
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button__option {
+  padding: 6px 22px;
+  background-color: var(--second-background-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__option:hover,
+.button__option:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.operation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.operation__item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.operation__foto {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.operation__foto:hover,
+.operation__foto:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: transparent;
+}
+.overlay__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  padding: 63px 24px;
+}
+.overlay__description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.operation__foto:hover .overlay__description {
+  transform: translateY(0);
+  opacity: 1;
+}
+.operation__foto:focus .overlay__description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.box {
+  padding: 20px 24px;
+
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+.operation__title {
+  margin-bottom: 4px;
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.operation__text {
+  color: var(--primary-text-color);
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
