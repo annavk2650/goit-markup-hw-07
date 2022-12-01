@@ -1,15 +1,7 @@
 .team {
   background-color: var(--second-background-color);
 }
-// .team__title {
-//   padding-bottom: 50px;
-//   color: var(--title-text-color);
 
-//   font-size: 36px;
-//   line-height: 1.16;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-// }
 .team__list {
   display: flex;
   gap: 30px;
@@ -44,6 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .social__item {
   width: 44px;
